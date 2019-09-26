@@ -1,0 +1,271 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+ body,html,.wrapper{
+ 	height:100%;
+ 	position: relative;
+  
+
+ }
+ 
+
+.top-side{
+	width:100%;
+	height:70px;
+	background-color: #354457;
+	color:#b3bcc5;
+	font-size: 14px;
+
+}
+.top-side div{
+	line-height: 70px;
+	width:200px;
+	height:70px;
+	margin-left: 20px;
+	 
+}
+.top-side div img{
+	width:30px;
+	height:30px;
+	 vertical-align: middle;
+
+}
+.botton-left{
+	width:200px;
+	height:calc(100% - 70px);
+	background-color: #4d5e70;
+	
+}
+.botton-left dl dt {
+	font-weight: bold;
+	margin-left: 10px;
+    color:#b3bcc5;
+}
+.botton-left dl dd{
+	padding-left: 20px;
+	color:#b3bcc5;
+}
+ 
+
+.botton-left dl dt,.botton-left dl dd{
+	 
+	height:40px;
+	line-height: 40px;
+}
+.botton-left dl dd.active {
+    background-color: #ddd;
+    color: #354457;
+}
+.botton-right{
+	width:calc(100% - 200px);
+	height:calc(100% - 70px);
+	position: absolute;
+	top:70px;
+	left:200px;
+	background-color: #eee;
+}
+.botton-right table{
+	width:100%;
+	text-align: center;
+
+}
+
+.botton-right .content {
+    display: none;
+   	
+
+}
+.botton-right #student-list{
+	position: absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+.botton-right .content.content-active {
+    display: block;
+} 
+
+.botton-right table thead th{
+	background-color: #e3e8ee;
+	color:#646987;
+	margin:10px 5px;
+	height:40px;
+	line-height: 40px;
+}
+
+.botton-right table tbody td{
+	background-color: white;
+	 height:40px;
+	line-height: 40px;
+	margin:0px 5px 10px;
+}
+
+table tr td .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+table tr td .btn.edit {
+    background-color: #5cb85c;
+}
+table tr td .btn.edit:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625
+}
+table tr td .btn.del {
+    background-color: #d9534f;
+}
+
+table tr td .btn.del:hover {
+    color: #fff;
+    background-color: #c9302c
+}
+/*.active{
+	display: none;
+}*/
+ 
+.add-student{
+	width:400px;
+	margin:100px auto;
+	}
+
+.content form label{
+	display:inline-block;
+	width:100px;
+	text-align: right;
+	margin-right: 10px;
+}
+.content form label.radio-label {
+    width: 20px;
+}
+.content form div{
+	margin-bottom: 10px;
+	height:25px;
+}
+ .content form .btn {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.content form label, .content form input {
+    font-size: 16px;
+}
+.button{
+	font-size: 0px;
+}
+
+.dialog{
+	position:fixed;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+    display: none;
+}
+.dialog.show{
+	display: block;
+}
+.dialog .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dialog .dialog-content {
+    width: 500px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -225px;
+    padding: 10px;
+}
+.dialog .dialog-content form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.page-find{
+	width:500px;
+	height:20px;
+	/*border:1px solid black;*/
+	margin:10px auto;
+	text-align: center;
+
+}
+.page-find a{
+	margin-left: 20px;
+	text-decoration: none;
+	color:black;
+}
+.page-find input{
+	width:30px;
+	margin-left: 10px;
+	background-color: #f3d9d9;
+
+}
+
+
+.turnpage{
+
+	margin:0px auto;
+	/*border:1px solid black;*/
+	text-align: center;
+	overflow: hidden;
+}
+.turnpage li{
+	width:60px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	padding:0px 10px;
+	background-color: #15d0bf;
+	border:1px solid #666;
+}
+.turnpage span{
+	float:left;
+	width:15px;
+}
+.turnpage .cur-page{
+	background-color: #3ade74;
+}
+.search{
+	width:100%;
+	height:50px;
+	font-weight: bold;
+
+}
+.search label{
+	color:#646987;
+}
+.search input{
+	display: inline-block;
+	width:200px;
+	height: 30px;
+	border:none;
+	margin-top:10px;
+	outline: none;
+}
+.search #showNum{
+	width:100px;
+	text-align: center;
+}
+.search button{
+	width:60px;
+	padding:0px 10px;
+	height: 30px;
+	background-color: #354457;
+	color:#fff;
+	border:none;
+}
